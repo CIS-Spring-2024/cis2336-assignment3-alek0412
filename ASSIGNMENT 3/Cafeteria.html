@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" href="home.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <header>
+        <img src="IMAGES/UH.jpg" alt="University of Houston Logo">
+        <h1><a href="Cafeteria.html">Don's Cafeteria</a></h1>
+    </header>
+    
+    
+    <!--Below we are creating a navigation tab.-->
+    
+    <nav class="topnav">
+        <a href="AboutUs.html"> About Us</a>
+        <a href="Menu.html">Menu</a>
+        <a href="Hours.html">Hours</a>
+        <a href="ContactUs.html">Contact Us</a>
+    </nav>
+
+    <!--We are creating a section that discusses the vendors who will be participating in our cafeteria.-->
+
+    <section id="intro">
+        <h2>Welcome to the homepage of <i>Don's Cafeteria</i> at the University of Houston!</h2>
+        <p class="center-text">We have opened our new cafeteria to students and guests, offering a variety of food vendors which will include:</p>
+        <div class="vendor-list-box">
+            <ul class="vendor-list">
+                <li>Alek's Hot Chicken</li>
+                <hr>
+                <li>Margarita's Tamales</li>
+                <hr>
+                <li>The Italian Spot</li>
+                <hr>
+                <li>Christopher's Burger Joint</li>
+                <hr>
+                <li>Anita Max Wynn Pizzeria</li>
+            </ul>
+        </div>
+    </section>
+    <hr>
+
+    <!--Below we create a section for photos of the foods we will be serving.-->
+
+    <section id="vendor">
+        <h2>Vendor Photos</h2>
+        <div class="vendor-images-container">
+            <img src="IMAGES/Madam's Chicken.jpg" alt="Alek's Hot Chicken">
+            <img src="IMAGES/Tamales 2.jpg" alt="Margarita's Tamales">
+            <img src="IMAGES/Italian 2.jpg" alt="The Italian Spot">
+            <img src="IMAGES/Burger 1.jpg" alt="Christopher's Burgers">
+            <img src="IMAGES/Pizza 1.jpg" alt="Anita Max Wynn Pizzeria">
+        </div>
+    </section>
+    <hr>
+
+    <!--Below we create a section for our location including a map, so anyone who comes acorss the website will know exactly where we are.-->
+
+    <section id="Location">
+        <h2>Location</h2>
+        <div class="location-container">
+            <div class="location-images-container">
+                <img src="IMAGES/Map.jpg" alt="map" onclick="openMapModal()">
+                <img src="IMAGES/TheHub.jpg" alt="building" onclick="openBuildingModal()">
+            </div>
+            <div class="location-info">
+                <details id="Info">
+                    <summary>Location information</summary>
+                    <p>We are located on the main campus at the University of Houston right next to the SR (Science and Research) building. On the map, the green dot is where we are specifically located.</p>
+                </details>
+            </div>
+        </div>
+    </section>
+    
+    <!--We create a div and script to select our map up close.-->
+
+    <div id="mapModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9);">
+        <span style="color: #fff; position: absolute; top: 15px; right: 35px; font-size: 40px; cursor: pointer;" onclick="closeMapModal()">&times;</span>
+        <img src="IMAGES/Map.jpg" alt="map" style="margin: auto; display: block; max-width: 100%; max-height: 100%;">
+    </div>
+
+    <div id="buildingModal" style="display:none; position: fixed; z-index: 1; left: 0; top: 0; width: 100%; height: 100%; overflow: auto; background-color: rgba(0,0,0,0.9);">
+        <span style="color: #fff; position: absolute; top: 15px; right: 35px; font-size: 40px; cursor: pointer;" onclick="closeBuildingModal()">&times;</span>
+        <img src="IMAGES/TheHub.jpg" alt="building" style="margin: auto; display: block; max-width: 100%; max-height: 100%;">
+    </div>
+
+    <script>
+        function openMapModal() {
+            var modal = document.getElementById('mapModal');
+            modal.style.display = 'block';
+        }
+
+        function closeMapModal() {
+            var modal = document.getElementById('mapModal');
+            modal.style.display = 'none';
+        }
+
+        function openBuildingModal() {
+            var modal = document.getElementById('buildingModal');
+            modal.style.display = 'block';
+        }
+
+        function closeBuildingModal() {
+            var modal = document.getElementById('buildingModal');
+            modal.style.display = 'none';
+        }
+        </script>
+
+        <hr>
+
+        <!--Below we will create a review section to show what the top critics say about the foods we will be serving.-->
+
+        <section id="review">
+            <div class="container">
+            <h2>Reviews</h2>
+            <div class="textbox" id="textbox1">
+                <h3>Alek's Chicken Review - <i>Guy Fieri</i></h3>
+            <p>       
+                Folks, I've cruised down to Flavortown many a time, but let me tell you about a little joint that's kickin' it up a notch with their bird - Alek's Hot Chicken.
+                
+                From the moment you walk in, the aroma hits you like a freight train of flavor. The vibe? It's as cool as the other side of the pillow. But let's talk turkey - or rather, chicken. <br> <br> 
+                
+                The star of the show at Alek's is his fiery hot chicken, and it's not just hot, it's volcanic! Each piece of chicken is a masterpiece, perfectly crispy on the outside and juicy as all get-out on the inside. 
+                
+                And the spice? It's like a symphony of heat, playing a tune on your taste buds that you won't forget. We're talking about a heat that builds and builds but doesn't overpower the rich flavors of the chicken.  <br> <br> 
+                
+                The seasoning - it's a secret blend, but it's got a kick that'll make your tongue do backflips. And when you bite into it, the heat wave that rolls over you is something out of a spice lover's dream. 
+                
+                It's a perfect balance of fire and flavor.
+                
+                Now, for the sides, their creamy coleslaw is the ideal cooling agent to this spice fest, and the crispy fries are just the cherry on top.
+                
+                Alek's Hot Chicken is serving up some of the most righteous, spicy chicken I've ever had the pleasure of sinking my teeth into. If you're a fan of heat and flavor that's off the hook, then this is your joint. Alek's Hot Chicken, you're doing it right! <br> <br>
+                <b>Rating: 5/5</b>
+
+            </p>            
+        </div>
+        <br> <br>
+            <div class="textbox" id="textbox2">
+                <h3>Margarita's Tamales Review - <i>Hassan Laija</i></h3>
+                <p>
+                    In the bustling heart of the city, there's a culinary gem that stands out with its exceptional handcrafted delicacies - Margarita's Tamales. Upon entering Margarita's cozy establishment, I was enveloped by the warm, inviting aroma of spices and corn masa, a prelude to the delightful experience ahead.
+                    
+                    The star of the menu is, without a doubt, the tamales. Each tamale is a testament to the artistry and dedication poured into its creation. The masa is perfectly steamed, achieving a texture that is both fluffy and substantial, serving as a comforting canvas for the vibrant fillings. <br> <br>
+                    
+                    Margarita offers a choice of chicken or pork, each steeped in its own uniquely crafted sauce. The chicken tamales are a revelation - tender, succulent shreds of chicken, marinated in a spice blend that is robust yet not overpowering. The pork tamales, on the other hand,  are my personal favorite and are a harmonious blend of savory and spicy, with the pork cooked to a melt-in-your-mouth tenderness that complements the bold flavors. <br> <br>
+                    
+                    What truly sets these tamales apart is the evident spicy kick - a daring yet well-balanced heat that invigorates the palate without diminishing the other flavors. It's a spice that lingers pleasantly, reminding you of the culinary adventure you're on.
+                    
+                    Accompanying these delights are a series of homemade salsas, ranging from the bright and tangy to the deep and smoky, each adding a new dimension to the tamales. <br> <br>
+                    
+                    In every bite of Margarita's tamales, you can taste the time-honored traditions and personal care that go into their making. It's not just food; it's a warm embrace of culture and passion, served up in a corn husk.
+                    
+                    For those in search of an authentic, heartwarming, and spicy tamale experience, look no further than Margarita's Tamales. This isn't just a meal; it's a celebration of flavors, tradition, and the dedication of a remarkable chef. <br> <br>
+                    
+                    <b>Rating: 5/5</b>
+                </p>
+
+            </div>
+            <br> <br>
+
+            <div class="textbox" id="textbox3">
+                <h3>The Italian Spot Review - <i>John Kramer</i></h3>
+            <p> In the heart of our bustling city lies The Italian Spot, a place many have spoken of, some with praise, others with a hint of reservation. Intrigued by this dichotomy, I decided to pay a visit to see for myself.
+
+                Upon entry, I was greeted by a charming interior that promises a classic Italian dining experience. The ambiance sets a warm, inviting tone, though it borders on the conventional. <br> <br>
+                
+                The menu offers a plethora of choices, ranging from traditional pastas to more adventurous seafood dishes. I opted to start with the Bruschetta, which was a delightful opener - the tomatoes were ripe and full of flavor, though I wished for a more robust hint of garlic and basil.
+                
+                For the main course, I chose the Tagliatelle al Ragù. The pasta was cooked al dente, a perfect texture that holds up well against the hearty meat sauce. However, the sauce itself, while flavorful, lacked a certain depth - a pinch more of seasoning could elevate it from good to great. <br> <br>
+                
+                Their Risotto ai Funghi, sampled by my dining companion, was a similar story - well-cooked rice and a creamy texture, but it fell a tad short in the mushroom flavor, which should be the star of the dish.
+                
+                The service was competent, efficient without being overbearing, which is always appreciated. Yet, there was a sense of routine in the air, missing that touch of Italian warmth and hospitality one often looks forward to in such establishments. <br> <br>
+                
+                In conclusion, The Italian Spot is a decent option for those in the neighborhood craving Italian cuisine. The dishes show promise, and with a few tweaks in flavor intensity and service warmth, this spot could very well evolve from just alright to a local favorite. For now, it's a satisfactory choice with room for culinary and experiential improvements. <br>
+                
+                <br> <b>Rating: 3/5</b>
+            </p>            
+            </div>
+            <br> <br>
+
+            <div class="textbox" id="textbox4">
+                <h3>Christopher's Burgers Review - <i>Gordan Ramsey</i></h3>
+        <p>
+            When it comes to burgers, I'm always on the lookout for something that stands out, something that shows a bit of culinary flair. That's why I was intrigued by Christopher's Burgers, a place that's been generating some buzz in the burger scene.
+
+            First impressions? The place has a vibrant energy, with a kitchen that's visibly buzzing with activity - a good sign in my book. The menu is ambitious, showcasing a range of burgers that promise both classic and innovative flavors. <br> <br>
+            
+            I opted for their signature "Christopher's Classic" burger. Presentation-wise, it was spot-on - a good-sized patty, fresh lettuce and tomato, and a brioche bun that looked perfectly toasted. However, the first bite revealed both highs and lows. The beef patty was well-seasoned and juicy, a testament to good quality meat. But it was slightly overcooked for my liking, missing that pink, succulent center that elevates a good burger to great. <br> <br>
+            
+            The toppings were fresh, which is always a plus, but the burger was crying out for a bit more creativity - something to make it truly memorable. The sauce was adequate, yet I found myself wishing for a punchier flavor to cut through the richness of the beef.
+            
+            The side of fries was a pleasant surprise - perfectly crispy and seasoned with what tasted like a house blend of spices. These were the highlight of the meal and showed a glimpse of the kitchen's potential.
+            
+            Service was efficient, though it lacked a bit of warmth - something I always value, especially in a bustling burger joint. <br> <br>
+            
+            In sum, Christopher's Burgers offers a solid, if somewhat safe, burger experience. There are clear signs of quality and potential, but I'd love to see more risk-taking in flavor combinations and cooking techniques. With a bit more finesse and boldness, Christopher's Burgers could well be on its way to becoming a top contender in the burger world. <br>
+            
+            <br> <b>Rating: 4/5</b>
+        </p>            
+        </div>
+            <br> <br>
+
+            <div class="textbox" id="textbox5">
+                <h3>Anita Max Wynn Pizzeria Review - <i>Aubrey Graham</i></h3>
+            <p>In my travels, I've savored slices from the backstreets of Naples to the bustling avenues of New York. But right in our backyard lies a hidden gem that's been spinning dough and crafting culinary masterpieces - Anita Max Wynn Pizzeria.
+
+                The moment you step into Anita Max Wynn, you're hit with the intoxicating aroma of baked dough and simmering tomato sauce - a siren song for any pizza lover. The ambiance is a fusion of classic and contemporary, much like the beats I love, with a vibe that's both welcoming and upscale. <br> <br>
+                
+                I went for their signature pie - the 'Anita Special,' a harmonious blend of mozzarella, homemade tomato sauce, basil, and a selection of gourmet toppings. Let me tell you, this pizza sings. The crust, thin and slightly charred, offers a crunch that resonates with each bite. <br> <br> The sauce is a melody of flavors - sweet, tangy, with a hint of spice, harmonizing perfectly with the creamy, rich mozzarella.
+                
+                What really sets this pie apart is the balance of flavors. It's like a well-orchestrated track - every element has its moment to shine without overpowering the others. The toppings, fresh and thoughtfully curated, add layers of complexity to each slice.
+                
+                Pair this with their selection of craft beers, and you've got a chorus that elevates the entire experience. The service? Impeccable. Attentive without being intrusive, adding a personal touch that makes you feel like a regular on your first visit. <br> <br>
+                
+                Anita Max Wynn isn't just a pizzeria; it's a place where culinary artistry meets the warmth of home. Whether you're a die-hard pizza aficionado or just in search of a slice that hits all the right notes, Anita Max Wynn is a must-visit. <br>
+                
+                <br><b>Rating: 5/5</b>
+            </p>            
+        </div>
+    </div>
+        </section>
+        
+        <!--We create our footer to let the user know how to contact us.-->
+
+    <footer>
+        <p>Copyright &copy; 2024 Don's Cafeteria. All rights reserved.
+    </footer>
+</body>
+</html>

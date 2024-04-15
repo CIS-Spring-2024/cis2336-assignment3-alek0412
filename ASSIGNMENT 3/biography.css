@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, .center {
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add text shadow for better visibility */
+}
+
+h1 {
+    background-color: black; /* Black background color */
+    padding: 20px 0; /* Add padding to top and bottom */
+    margin: 0; /* Remove default margin */
+    font-size: 36px; /* Increase font size */
+    color: white; /* Set text color to white */
+}
+
+h2 {
+    background-color: rgb(182, 45, 53); /* Reddish background color */
+    padding: 10px 0; /* Add padding to top and bottom */
+    margin: 0; /* Remove default margin */
+    font-size: 24px; /* Increase font size */
+    color: white; /* Set text color to white */
+}
+
+img {
+    border-radius: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container img {
+    width: auto;
+    max-height: 300px; /* Adjust this value as needed */
+}
+
+.box {
+    width: 80%;
+    margin: 0 auto;
+    border: 2px solid #333;
+    padding: 20px;
+    color: white;
+    background-color: rgb(135, 32, 39); /* Reddish background color */
+}
+
+.bio-image {
+    width: 200px; /* Adjust this value as needed */
+    height: 200px; /* Same as width for a circle */
+    border-radius: 50%; /* Makes the image circular */
+    border: 1px solid #333; /* Add border with smaller width */
+    object-fit: cover; /* Adjusts the image fit */
+}
+
+a {
+    color: black;
+}
